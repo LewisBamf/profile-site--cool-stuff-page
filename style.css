@@ -38,7 +38,7 @@ body{
   .navbar {
     grid-template-rows: 1fr;
     grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
-    height: 5%;
+    height: 5vh;
     width: 100%;
     min-height: 50px;
     max-height: 100px;

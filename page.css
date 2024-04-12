@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    transform: translate(0px, 5vh);
 }
 
 .page-layout {
@@ -16,8 +17,9 @@
     grid-template-rows: repeat(5, auto);
     justify-content: center;
     align-items: center;
+    text-align: center;
         /* delete later */
-    border: 3px solid black;
+    border: 0px solid black;
 }
 
 .grid-item{
@@ -30,4 +32,5 @@
     font-size: 60px;
     justify-self: center;
     align-self: center;
+    color: var(--bgcl);
 }
