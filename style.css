@@ -164,8 +164,8 @@ body{
     transition: all 1s ease;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-direction: row;
     gap: 10px;
   }
 
