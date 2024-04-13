@@ -12,7 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    transform: translate(0px, 5vh);
 }
 
 .page-layout {
