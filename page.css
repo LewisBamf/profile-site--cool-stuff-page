@@ -3,7 +3,7 @@
     --seccondary-color: hsl(0, 84%, 64%);
     --blue-color: hsl(210, 32%, 28%);
     --Lightblue-color: hsl(210, 32%, 50%);
-    --dark-color: hsl(0, 0%, 7%);
+    --dark-color: hsl(0, 0%, 28%);
 }
 
 .gridPOS{
@@ -16,8 +16,9 @@
 
 .page-layout {
     display: grid;
-    width: 95vw;
+    width: 100vw;
     height: fit-content;
+    min-height: 200px;
     overflow-y: scroll;
     overflow-x: hidden;
     grid-template-columns: 1fr;
@@ -34,6 +35,7 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .main-title {
     font-size: 60px;
@@ -45,4 +47,24 @@
 
 .main-title:hover {
     text-shadow: 10px 10px var(--dark-color);
+}
+
+/* code for the spinning transition thing */
+
+
+.grid-item:nth-child(2){
+    height: fit-content;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 200px;
+}
+.spinning-transition {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--bgcl);
+    transform: rotateX(0deg);
+    transition: all 2s ease;
 }

@@ -12,6 +12,7 @@
 
 body{
     background-color: var(--seccondary-color);
+    transition: background-color 0.8s ease;
     width: 100vw;
     overflow-x: hidden;
     overflow-y: scroll;
