@@ -59,12 +59,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    perspective: 200px;
+    overflow: visible;
+    perspective: 600px;
 }
+
+@media only screen and (max-width: 600px) {
+    .grid-item:nth-child(2){
+        perspective: 300px;
+    }
+}
+
 .spinning-transition {
-    width: 50%;
+    width: 30%;
     aspect-ratio: 1 / 1;
-    background-color: var(--bgcl);
+    opacity: 1;
+    fill: var(--bgcl);
     transform: rotateX(0deg);
-    transition: all 2s ease;
+    transition: transform 2s ease, scale 2s ease, opacity 0.5s ease;
+}
+
+.spinning-shape {
+    transition: all 1s ease;
 }
